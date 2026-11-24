@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.combatparticles.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ParticleEngineMixin",
+		"GameRendererMixin",
+		"GuiMixin",
+		"MultiPlayerGameModeMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "combatparticles",
+	"version": "${version}",
+	"name": "Combat Particles",
+	"description": "Per-kit particle profiles (Spear Mace, Mace, Crystal) with their own page in Sodium's Video Settings.",
+	"authors": [ "You" ],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.combatparticles.CombatParticlesClient"
+		],
+		"sodium:config_api_user": [
+			"com.combatparticles.sodium.CombatParticlesSodiumPage"
+		]
+	},
+	"mixins": [
+		"combatparticles.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.0",
+		"minecraft": "1.21.11",
+		"java": ">=21",
+		"sodium": ">=0.8.0"
+	}
+}
